@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+public class PrimeClient extends Client{
+    private int discount;
+
+    public PrimeClient(int id, String name, String surname, ArrayList<Order> orderHistory, int discount) {
+        super(id, name, surname, orderHistory);
+        this.discount = discount;
+    }
+
+    public int getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(int discount) {
+        this.discount = discount;
+    }
+}
